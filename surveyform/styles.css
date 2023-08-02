@@ -1,0 +1,51 @@
+/* Custom CSS for the Survey Form */
+
+/* Star Rating Styles */
+.rating {
+    font-size: 24px;
+    color: #FFD700;
+  }
+  
+  .rating input[type="radio"] {
+    display: none;
+  }
+  
+  .rating label {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    margin: 0;
+  }
+  
+  .rating label:before {
+    content: '\f005';
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    display: block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
+  
+  .rating input[type="radio"]:checked ~ label:before {
+    content: '\f005';
+    color: #FFD700;
+  }
+
+  
+  
+    
+  
+
+
+      .side-by-side-inputs {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+      }
+  
+      .side-by-side-inputs label {
+        flex: 0 0 120px;
+        margin-right: 10px;
+      }

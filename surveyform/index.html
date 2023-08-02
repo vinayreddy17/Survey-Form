@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey Form</title>
+  <!-- Link Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Survey Form</h2>
+    <form>
+      <div class="form-group">
+        <label for="firstName">Name</label>
+        <input type="text" class="form-control" id="firstName" placeholder="First Name">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Email">
+      </div>
+      <div class="form-group">
+        <label>Your Experience</label><br>
+        <div class="rating">
+          <input type="radio" id="star5" name="experienceRating" value="5" /><label for="star5" title="5 stars"></label>
+          <input type="radio" id="star4" name="experienceRating" value="4" /><label for="star4" title="4 stars"></label>
+          <input type="radio" id="star3" name="experienceRating" value="3" /><label for="star3" title="3 stars"></label>
+          <input type="radio" id="star2" name="experienceRating" value="2" /><label for="star2" title="2 stars"></label>
+          <input type="radio" id="star1" name="experienceRating" value="1" /><label for="star1" title="1 star"></label>
+        </div>
+      </div>
+      
+      <h2>How satisfied are you with our :</h2>
+      <div class="form-group  side-by-side-inputs">
+        
+        <label>Purchase:</label><br>
+        <label><input type="radio" name="satisfactionPurchase" value="Very Unsatisfied"> Very Unsatisfied</label>
+        <label><input type="radio" name="satisfactionPurchase" value="Unsatisfied"> Unsatisfied</label>
+        <label> <input type="radio" name="satisfactionPurchase" value="Neutral"> Neutral</label>
+            <label><input type="radio" name="satisfactionPurchase" value="Satisfied"> Satisfied</label>
+                <label><input type="radio" name="satisfactionPurchase" value="Very Satisfied"> Very Satisfied</label>
+      </div>
+      <div class="form-group  side-by-side-inputs" >
+        <label> Service</label><br>
+        <label><input type="radio" name="satisfactionPurchase" value="Very Unsatisfied"> Very Unsatisfied</label>
+        <label><input type="radio" name="satisfactionPurchase" value="Unsatisfied"> Unsatisfied</label>
+        <label> <input type="radio" name="satisfactionPurchase" value="Neutral"> Neutral</label>
+            <label><input type="radio" name="satisfactionPurchase" value="Satisfied"> Satisfied</label>
+                <label><input type="radio" name="satisfactionPurchase" value="Very Satisfied"> Very Satisfied</label>
+      </div>
+      
+      <!-- <div class="form-group  side-by-side-inputs">
+        <label>How satisfied are you with our company overall?</label><br>
+        <input type="radio" name="satisfactionCompany" value="Very Unsatisfied"> Very Unsatisfied<br>
+        <input type="radio" name="satisfactionCompany" value="Unsatisfied"> Unsatisfied<br>
+        <input type="radio" name="satisfactionCompany" value="Neutral"> Neutral<br>
+        <input type="radio" name="satisfactionCompany" value="Satisfied"> Satisfied<br>
+        <input type="radio" name="satisfactionCompany" value="Very Satisfied"> Very Satisfied<br>
+      </div> -->
+      <div class="form-group">
+        <label>Overall, how would you rate your experience with us?</label>
+        <select class="form-control">
+          <option>Very Unsatisfied</option>
+          <option>Unsatisfied</option>
+          <option>Neutral</option>
+          <option>Satisfied</option>
+          <option>Very Satisfied</option>
+        </select>
+      </div>
+      <h2>How likely are you to</h2>
+      <div class="form-group side-by-side-inputs">
+       
+        <label>Buy From us again:</label><br>
+       <label> <input type="radio" name="likelihoodBuy" value="Very Unlikely"> Very Unlikely</label>
+       <label> <input type="radio" name="likelihoodBuy" value="Unlikely"> Unlikely</label>
+       <label><input type="radio" name="likelihoodBuy" value="Neutral"> Neutral</label>
+        <label> <input type="radio" name="likelihoodBuy" value="Likely"> Likely</label>
+            <label> <input type="radio" name="likelihoodBuy" value="Very Likely"> Very Likely</label>
+      </div>
+      <div class="form-group side-by-side-inputs">
+        <label>Recommend our product to others</label><br>
+        <label> <input type="radio" name="likelihoodBuy" value="Very Unlikely"> Very Unlikely</label>
+        <label> <input type="radio" name="likelihoodBuy" value="Unlikely"> Unlikely</label>
+        <label><input type="radio" name="likelihoodBuy" value="Neutral"> Neutral</label>
+         <label> <input type="radio" name="likelihoodBuy" value="Likely"> Likely</label>
+             <label> <input type="radio" name="likelihoodBuy" value="Very Likely"> Very Likely</label>
+      </div>
+      <div class="form-group side-by-side-inputs">
+        <label>Recommend our company to others</label><br>
+        <label> <input type="radio" name="likelihoodBuy" value="Very Unlikely"> Very Unlikely</label>
+        <label> <input type="radio" name="likelihoodBuy" value="Unlikely"> Unlikely</label>
+        <label><input type="radio" name="likelihoodBuy" value="Neutral"> Neutral</label>
+         <label> <input type="radio" name="likelihoodBuy" value="Likely"> Likely</label>
+             <label> <input type="radio" name="likelihoodBuy" value="Very Likely"> Very Likely</label>
+      </div>
+      <div class="form-group">
+        <label for="comments">Additional comments or suggestions</label>
+        <textarea class="form-control" id="comments" rows="4" placeholder="Your comments or suggestions"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
+
